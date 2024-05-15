@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Theme id="TagNexDark" xmlns="http://waher.se/Schema/Theme.xsd">
+	<Presentation>
+		<Title>TAG NEX Dark</Title>
+		<Thumbnail width="480" height="270">TagNexDark.png</Thumbnail>
+	</Presentation>
+	<BasicProperties>
+		<CSSX>TagNexDark.cssx</CSSX>
+		<TextColor>#FFFFFF</TextColor>
+		<BackgroundColor>#18191A</BackgroundColor>
+		<HeaderColor>#FFFFFF</HeaderColor>
+		<HeaderTextColor>#FFFFFF</HeaderTextColor>
+		<ButtonColor>#4D87C2</ButtonColor>
+		<ButtonTextColor>#FFFFFF</ButtonTextColor>
+		<MenuTextColor>#202020</MenuTextColor>
+		<InsertColor>#ff5fff40</InsertColor>
+		<DeleteColor>#5fffff40</DeleteColor>
+		<LinkColorUnvisited>#3187B9</LinkColorUnvisited>
+		<LinkColorVisited>#25658B</LinkColorVisited>
+		<LinkColorHot>#4CAF50</LinkColorHot>
+		<FontFamily>"Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif</FontFamily>
+		<GraphBgColor>#000000</GraphBgColor>
+		<GraphFgColor>#FFFFFF</GraphFgColor>
+	</BasicProperties>
+	<CustomProperties>
+		<Property name="FooterBackground" value='black' />
+
+		<Property name="SunB" value='rgb(18 161 119)' />
+		<Property name="HeaderFont" value='"Space Grotesk"' />
+		
+		<Property name="SecondaryButtonColor" value='#FFFFFF' />
+		<Property name="SecondaryTextColor" value='#000000' />
+		
+		<Property name="TertiaryButtonColor" value='#000000' />
+		<Property name="TertiaryTextColor" value='#FFFFFF' />
+
+		<Property name="PosColor" value="#159B2C" />
+		<Property name="PosSelectedColor" value="#7EC88B" />
+		<Property name="NegColor" value="#D83134" />
+		<Property name="NegSelectedColor" value="#EA8E8F" />
+		<Property name="TagColor" value="#4D87C2" />
+		<Property name="DropDownColor" value="#E4F0FE" />
+		<Property name="DropDownTextColor" value="#000000" />
+		<Property name="RestrictionColor" value="#EB9500" />
+		<Property name="PublishColor" value="#159B2C" />
+		<Property name="EditorColor" value="#68217A" />
+	</CustomProperties>
+	<BackgroundImages>
+		<BackgroundImage width="1600" height="1600">backgroundsvg.svg</BackgroundImage>
+	</BackgroundImages>
+	<BannerImages>
+	</BannerImages>
+</Theme>

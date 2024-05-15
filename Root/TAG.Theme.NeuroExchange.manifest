@@ -1,0 +1,19 @@
+<Module xmlns="http://waher.se/Schema/ModuleManifest.xsd">
+	<Content fileName="Community.config"/>
+	<Folder name="Root">
+		<Folder name="Themes">
+			<Folder name="TagNexLight">
+				<Content fileName="backgroundsvg.svg"/>
+				<Content fileName="TagNexLight.cssx"/>
+				<Content fileName="TagNexLight.png"/>
+				<Content fileName="TagNexLight.xml"/>
+			</Folder>
+			<Folder name="TagNexDark">
+				<Content fileName="backgroundsvg.svg"/>
+				<Content fileName="TagNexDark.cssx"/>
+				<Content fileName="TagNexDark.png"/>
+				<Content fileName="TagNexDark.xml"/>
+			</Folder>
+		</Folder>
+	</Folder>
+</Module>
