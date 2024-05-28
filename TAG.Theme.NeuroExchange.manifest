@@ -1,5 +1,4 @@
 <Module xmlns="http://waher.se/Schema/ModuleManifest.xsd">
-	<Content fileName="Community.config"/>
 	<Folder name="Root">
 		<Folder name="Themes">
 			<Folder name="TagNexLight">
