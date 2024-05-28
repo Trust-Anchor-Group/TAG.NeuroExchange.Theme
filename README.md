@@ -29,8 +29,8 @@ Example:
 
 ```
 <FileFolders>
-  <FileFolder webFolder="/Themes/NexLight" folderPath="C:\My Projects\TAG.Theme.NeuroExchange\Root\NexLight"/>
-  <FileFolder webFolder="/Themes/NexDark" folderPath="C:\My Projects\TAG.Theme.NeuroExchange\Root\NexDark"/>
+  <FileFolder webFolder="/Themes/TagNexLight" folderPath="D:\TAG\TAG.Theme.NeuroExchange\Root\Themes\TagNexLight"/>
+  <FileFolder webFolder="/Themes/TagNexDark" folderPath="D:\TAG\TAG.Theme.NeuroExchange\Root\Themes\TagNexDark"/>
 </FileFolders>
 ```
 
