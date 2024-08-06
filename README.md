@@ -13,8 +13,15 @@ repository, to create a package file and cryptographically sign it for secure di
 | Package information |                                                                                                                |
 | :------------------ | :------------------------------------------------------------------------------------------------------------- |
 | Package             | `TAG.Theme.NeuroExchange`                                                                                      |
-| Installation key    | `JnaUD9NeT/sYszuFudLaxug+FdNyjBEjBt48qyPNQy1PFgZC03xeZmIDoA6q+CN93Jgrb1o6xkgAcbcc8ab6532a1e079630b5c8615771f1` |
+| Installation key    | `BGVWw9FYGj6+mY8nxScZgoKRC8SiV80mWJhHXfUZL3ASrwZSab5PdEwmyfwpJVUEWEMNST4HWayA1640d45c2eae16ecf48e883c75dd25f7` |
 | More Information    |                                                                                                                |
+
+To install package on a TAG Neuron(R), execute the following command in a chat admin interface:
+
+```
+install nobackup TAG.Theme.NeuroExchange.package BGVWw9FYGj6+mY8nxScZgoKRC8SiV80mWJhHXfUZL3ASrwZSab5PdEwmyfwpJVUEWEMNST4HWayA1640d45c2eae16ecf48e883c75dd25f7
+```
+
 
 ## Development
 
