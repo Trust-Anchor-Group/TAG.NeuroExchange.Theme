@@ -26,18 +26,18 @@
 		<Property name="FooterBackground" value='black' />
 
 		<Property name="SunB" value='rgb(18 161 119)' />
-		<Property name="HeaderFont" value='"Space Grotesk"' />
-		
-		<Property name="SecondaryButtonColor" value='#FFFFFF' />
-		<Property name="SecondaryTextColor" value='#000000' />
-		
-		<Property name="TertiaryButtonColor" value='#000000' />
-		<Property name="TertiaryTextColor" value='#FFFFFF' />
 
-		<Property name="PosColor" value="#159B2C" />
-		<Property name="PosSelectedColor" value="#7EC88B" />
-		<Property name="NegColor" value="#D83134" />
-		<Property name="NegSelectedColor" value="#EA8E8F" />
+
+		<Property name="HeaderFont" value='"Space Grotesk"' />
+		<Property name="SecondaryButtonColor" value='#000000' />
+		<Property name="SecondaryTextColor" value='#FFFFFF' />
+		<Property name="TertiaryButtonColor" value='#FFFFFF' />
+		<Property name="TertiaryTextColor" value='#000000' />
+		<Property name="PosColor" value="#33c592" />
+		<Property name="PosSelectedColor" value="#3E776D" />
+		<Property name="ButtonSelectedColor" value="#2d557f"/>
+		<Property name="NegColor" value="#d5474a" />
+		<Property name="NegSelectedColor" value="#8f2c2e" />
 		<Property name="TagColor" value="#4D87C2" />
 		<Property name="DropDownColor" value="#E4F0FE" />
 		<Property name="DropDownTextColor" value="#000000" />
