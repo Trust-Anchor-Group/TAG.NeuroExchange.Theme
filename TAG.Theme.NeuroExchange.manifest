@@ -1,6 +1,9 @@
 <Module xmlns="http://waher.se/Schema/ModuleManifest.xsd">
 	<Folder name="Root">
 		<Folder name="Themes">
+			<Folder name="TagNexBase">
+				<Content fileName="TagNexBase.cssx"/>
+			</Folder>
 			<Folder name="TagNexLight">
 				<Content fileName="backgroundsvg.svg"/>
 				<Content fileName="TagNexLight.cssx"/>
