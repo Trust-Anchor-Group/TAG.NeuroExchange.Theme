@@ -182,14 +182,6 @@ fieldset
 
 .posButton 
 {
-    font-family: ¤HeaderFont¤, ¤FontFamily¤;
-	background-color:¤PosColor¤;
-    color: #FFF;
-}
-
-.posButton:hover, .posButtonPressed
-{
-	background-color:¤PosSelectedColor¤;
     color: #FFF;
 }
 
