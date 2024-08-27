@@ -47,6 +47,10 @@ iframe
 }
 
 
+fieldset > legend {
+    color: white;
+}
+
 pre
 {
     background: #F4F4F4;

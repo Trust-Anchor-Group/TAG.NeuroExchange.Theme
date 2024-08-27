@@ -17,12 +17,12 @@
 
 /*#region Dropdown*/
 
-li:hover > a 
+header li:hover > a 
 {
     color: inherit !important;
 }
 
-li > ul > li
+header li > ul > li
 {
     display: flex;
     position: relative;
@@ -31,34 +31,34 @@ li > ul > li
     border-top: none;
 }
 
-li > ul > li:nth-child(1) {
+header li > ul > li:nth-child(1) {
     border-top: 1px rgb(209, 209, 209) solid;
 }
 
-li > ul > li > a 
+header li > ul > li > a 
 {
     height: 100%;
 }
 
 
 
-li > ul > li:hover
+header li > ul > li:hover
 {
     background-color: rgb(212, 212, 212);
 }
 
-li > ul > li > ul > li
+header li > ul > li > ul > li
 {
     background-color: rgb(255, 255, 255);
     color: black;
 }
 
-li > ul > li:hover > ul
+header li > ul > li:hover > ul
 {
     display: block;
 }
 
-li > ul > li > ul
+header li > ul > li > ul
 {
     padding: 0px;
     display: none;
