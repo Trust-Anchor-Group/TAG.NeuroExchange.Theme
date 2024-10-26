@@ -3,10 +3,8 @@
 
 section
 {
-    padding: 2em 2em 2em 2em;
     border: 1px solid #B3B3B3;
     border-radius: 8px;
-    margin: 3em 0.5em 3em 0;
     background-color: #FFFFFF;
 }
 
@@ -175,13 +173,9 @@ input[type="radio"]:checked + label:before
 
 fieldset
 {
-    margin:2em 1em 2em 1em;
     border:0.1em solid ¤HeaderColor¤;
-    padding: 1em 2em 1em 2em;
     background-color: ¤Alpha(HeaderColor,6)¤;
     border-radius: 8px;
-	-webkit-column-break-inside: avoid;
-	break-inside: avoid;
 }
 
 .posButton 

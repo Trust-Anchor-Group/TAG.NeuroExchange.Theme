@@ -8,10 +8,8 @@ body
 
 section
 {
-    padding: 2em 2em 2em 2em;
     border: 1px solid #B3B3B3;
     border-radius: 10px;
-    margin: 3em 0.5em 3em 0;
     background-color: transparent;
 }
 
@@ -54,7 +52,6 @@ iframe
 
 pre
 {
-    background: #F4F4F4;
     padding: 0.5em;
     border-radius: 8px;
     -moz-tab-size: 4;
@@ -76,7 +73,6 @@ blockquote
     border-right: 2px solid ¤ButtonColor¤;
     border-bottom: 2px solid ¤ButtonColor¤;
     padding: 1em 1em 1em 2em;
-    background-color: #FFF;
     border-radius: 0 8px 8px 0;
     box-shadow: 0.3em 0.3em 0.3em rgba(0,0,0,0.1);
 }
@@ -131,12 +127,10 @@ th > a:only-child:active
     display:inline-block;
     border: 2px solid #6e6e6e;
     padding: 1em 3em 1em 3em;
-    background-color: #FFFFFF;
+    background-color: rgb(24, 25, 26);
     border-radius: 8px;
     box-shadow: 0.3em 0.3em 0.3em rgba(0,0,0,0.1);
 }
-
-
 
 .footnotes
 {
@@ -146,7 +140,7 @@ th > a:only-child:active
     left: 0;
     margin: 2em 0 0 0;
     padding: 0.5em 6% 0.5em 6%;       /* 0.5em 0em 0.5em 0em */
-    background-color: #FFF;
+    background-color: #000;
 }
 
 
@@ -176,13 +170,9 @@ input[type="radio"]:checked + label:before
 
 fieldset
 {
-    margin:2em 1em 2em 1em;
     border:0.1em solid ¤HeaderColor¤;
-    padding: 1em 2em 1em 2em;
     background-color: ¤Alpha(HeaderColor,6)¤;
     border-radius: 8px;
-	-webkit-column-break-inside: avoid;
-	break-inside: avoid;
 }
 
 .posButton 
