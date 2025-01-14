@@ -1,4 +1,14 @@
-﻿@import url("../Base/Base.cssx");
+﻿¤PreprocessCssx(LoadResourceFile("/Themes/Base/Base.cssx"))¤
+
+
+/* #region Popup */
+
+#native-popup-container
+{
+    border-radius:8px;
+}
+
+/* #endregion Popup */
 
 .menuItem {
     box-shadow: none !important;
@@ -26,7 +36,7 @@ body
     height:100%;
     position:relative;
     margin:0;
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
 }
 
 /* region Header */
@@ -634,7 +644,7 @@ li.taskListItem > input[type='checkbox'][data-editable='1']
 
 input[type='checkbox']:checked ~ label.taskListItemLabel
 {
-    color:¤Blend(BackgroundColor,TextColor,0.35)¤;
+    color:¤Blend(BackgroundColor,Theme.TextColor,0.35)¤;
     text-decoration:line-through;
 }
 
@@ -801,7 +811,7 @@ input
     border: 2px solid ¤ButtonColor¤;
     border-radius: 4px;
     background-color: ¤GraphBgColor¤;
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
 }
 
 input:focus
@@ -818,7 +828,7 @@ select
     border: 2px solid ¤ButtonColor¤;
     border-radius: 4px;
     background-color: ¤GraphBgColor¤;
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
 }
 
 select:focus
@@ -828,7 +838,7 @@ select:focus
 
 option
 {
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
     background-color:¤BackgroundColor¤;
 }
 
@@ -853,7 +863,7 @@ textarea
 	-o-tab-size : 3;
 	tab-size : 3;
     background-color: ¤GraphBgColor¤;
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
 }
 
 textarea:focus
@@ -863,7 +873,7 @@ textarea:focus
 
 input[type=button], input[type=submit], input[type=reset], button
 {
-    font-family: ¤HeaderFont¤;
+    font-family: ¤HeaderFont¤, ¤FontFamily¤;
     transition: color 100ms, background-color 100ms;
     background-color: ¤ButtonColor¤;
     font-weight: bold;
@@ -923,7 +933,7 @@ input[type="checkbox"] + label:before
     box-sizing: border-box;
     border: 2px solid ¤ButtonColor¤;
     background-color: ¤GraphBgColor¤;
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
 }
 
 input[type="checkbox"] + label:before:focus
@@ -935,7 +945,7 @@ input[type="checkbox"]:checked + label:before
 {
     content: "\2713";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    color: ¤TextColor¤;
+    color: ¤Theme.TextColor¤;
     text-align: center;
     line-height: 0.75em;
 }
@@ -1076,7 +1086,7 @@ fieldset > legend
 
 .disabledButton
 {
-	background-color:¤Blend(TextColor,BackgroundColor,0.75)¤;
+	background-color:¤Blend(Theme.TextColor,BackgroundColor,0.75)¤;
 }
 
 .error 
@@ -1124,7 +1134,7 @@ abbr:hover::after
     padding: 0.25em 0.5em;
     background: ¤Blend(ButtonColor,BackgroundColor,0.75)¤;
     border: 1px solid ¤ButtonColor¤
-    color:¤TextColor¤;
+    color:¤Theme.TextColor¤;
     content: attr(data-title);
 }
 
@@ -1158,18 +1168,22 @@ abbr:hover::after
         align-items: center;
     }
 
-    #native-header nav > ul > li:hover > ul
+
+    #native-header nav > ul > li:hover > ul 
     {
         display:block;
-        position:absolute;
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
 
-    #native-header li > ul > li 
+    #native-header li > ul > li > a
     {
         background-color: ¤BackgroundColor¤;
+    }
+    #native-header li > ul > li:hover > a
+    {
+        background-color: ¤Blend(BackgroundColor, "black", 0.1)¤;
     }
 }
 

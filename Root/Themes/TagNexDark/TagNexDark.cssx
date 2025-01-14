@@ -1,5 +1,4 @@
-﻿@import url("../TagNexBase/TagNexBase.cssx");
-
+﻿¤PreprocessCssx(LoadResourceFile("/Themes/TagNexBase/TagNexBase.cssx"))¤
 
 body
 {
@@ -79,7 +78,7 @@ blockquote
 
 input[type='checkbox']:checked ~ label.taskListItemLabel
 {
-    color:¤Blend(BackgroundColor,TextColor,0.35)¤;
+    color:¤Blend(BackgroundColor,Theme.TextColor,0.35)¤;
     text-decoration:line-through;
 }
 
@@ -148,7 +147,7 @@ input[type="checkbox"]:checked + label:before
 {
     content: "\2713";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    color: ¤TextColor¤;
+    color: ¤Theme.TextColor¤;
     text-align: center;
     line-height: 0.75em;
 }
@@ -190,7 +189,7 @@ fieldset
 
 .disabledButton
 {
-	background-color:¤Blend(TextColor,BackgroundColor,0.75)¤;
+	background-color:¤Blend(Theme.TextColor,BackgroundColor,0.75)¤;
 }
 
 .error 
@@ -203,7 +202,6 @@ fieldset
     display: inherit;
 }
 
-
 mark
 {
     background-color:¤TagColor¤;
@@ -211,4 +209,17 @@ mark
     font-family: ¤HeaderFont¤, ¤FontFamily¤;
     border-radius: 0.3em;
     padding: 0.1em 0.3em;
+}
+
+@media screen and (min-width: 901px) {
+    #native-header li > ul > li
+    {
+        border-left: 1px solid rgba(255,255,255,0.7);
+        border-bottom: 1px solid rgba(255,255,255,0.7);
+        border-right: 1px solid rgba(255,255,255,0.7);
+        background-color: rgba(0,0,0,0.75);
+        white-space:nowrap;
+        transition: opacity 0.25s ease-out;
+        color:white;
+    }
 }

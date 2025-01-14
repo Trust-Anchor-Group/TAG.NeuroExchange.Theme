@@ -23,7 +23,7 @@
 		<GraphFgColor>#000000</GraphFgColor>
 	</BasicProperties>
 	<CustomProperties>
-		<Property name="HeaderFont" value='Space Grotesk"' />
+		<Property name="HeaderFont" value='"Space Grotesk"' />
 		<Property name="SecondaryButtonColor" value='#000000' />
 		<Property name="SecondaryTextColor" value='#FFFFFF' />
 		<Property name="TertiaryButtonColor" value='#FFFFFF' />

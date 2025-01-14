@@ -1,5 +1,4 @@
-﻿@import url("../TagNexBase/TagNexBase.cssx");
-
+﻿¤PreprocessCssx(LoadResourceFile("/Themes/TagNexBase/TagNexBase.cssx"))¤
 
 section
 {
@@ -80,7 +79,7 @@ blockquote
 
 input[type='checkbox']:checked ~ label.taskListItemLabel
 {
-    color:¤Blend(BackgroundColor,TextColor,0.35)¤;
+    color:¤Blend(BackgroundColor,Theme.TextColor,0.35)¤;
     text-decoration:line-through;
 }
 
@@ -151,7 +150,7 @@ input[type="checkbox"]:checked + label:before
 {
     content: "\2713";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    color: ¤TextColor¤;
+    color: ¤Theme.TextColor¤;
     text-align: center;
     line-height: 0.75em;
 }
@@ -185,7 +184,7 @@ fieldset
 
 .disabledButton
 {
-	background-color:¤Blend(TextColor,BackgroundColor,0.75)¤;
+	background-color:¤Blend(Theme.TextColor,BackgroundColor,0.75)¤;
 }
 
 .error 
