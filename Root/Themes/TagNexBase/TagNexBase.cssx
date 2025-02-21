@@ -1,6 +1,5 @@
 ﻿¤PreprocessCssx(LoadResourceFile("/Themes/Base/Base.cssx"))¤
 
-
 /* #region Popup */
 
 #native-popup-container
@@ -184,10 +183,6 @@ table
     border-radius: 8px;
 }
 
-table > colgroup {
-    width: 100%;
-}
-
 td
 {
     min-width: 10rem;
@@ -274,7 +269,7 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9
     color:¤HeaderTextColor¤;
     margin-block: 1em 0.5em;
     font-weight: 500;
-    font-family: ¤HeaderFont¤, ¤Theme.FontFamily¤;
+    font-family: "Space Grotesk", ¤Theme.FontFamily¤;
 }
 
 h1
@@ -1133,7 +1128,7 @@ abbr:hover::after
     display: block;
     padding: 0.25em 0.5em;
     background: ¤Blend(ButtonColor,BackgroundColor,0.75)¤;
-    border: 1px solid ¤ButtonColor¤
+    border: 1px solid ¤ButtonColor¤;
     color:¤Theme.TextColor¤;
     content: attr(data-title);
 }
