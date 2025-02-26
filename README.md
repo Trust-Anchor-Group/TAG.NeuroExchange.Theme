@@ -6,20 +6,20 @@ Free theme that can be used on any [TAG Neuron(R)](https://lab.tagroot.io/Docume
 
 The Neuro Exchange theme has been made into a package that can be downloaded and installed on any
 [TAG Neuron](https://lab.tagroot.io/Documentation/Index.md). To create a package, that can be distributed or installed, you begin by creating
-a _manifest file_. This repository contains a manifest file called `TAG.Theme.NeuroExchange.manifest`. It defines the content files included in the package.
+a _manifest file_. This repository contains a manifest file called `TAG.NeuroExchange.Theme.manifest`. It defines the content files included in the package.
 You then use the `Waher.Utility.Install` and `Waher.Utility.Sign` command-line tools in the [IoT Gateway](https://github.com/PeterWaher/IoTGateway)
 repository, to create a package file and cryptographically sign it for secure distribution across the Neuron network.
 
 | Package information |                                                                                                                |
 | :------------------ | :------------------------------------------------------------------------------------------------------------- |
-| Package             | `TAG.Theme.NeuroExchange`                                                                                      |
+| Package             | `TAG.NeuroExchange.Theme`                                                                                      |
 | Installation key    | `BGVWw9FYGj6+mY8nxScZgoKRC8SiV80mWJhHXfUZL3ASrwZSab5PdEwmyfwpJVUEWEMNST4HWayA1640d45c2eae16ecf48e883c75dd25f7` |
 | More Information    |                                                                                                                |
 
 To install package on a TAG Neuron(R), execute the following command in a chat admin interface:
 
 ```
-install nobackup TAG.Theme.NeuroExchange.package BGVWw9FYGj6+mY8nxScZgoKRC8SiV80mWJhHXfUZL3ASrwZSab5PdEwmyfwpJVUEWEMNST4HWayA1640d45c2eae16ecf48e883c75dd25f7
+install nobackup TAG.NeuroExchange.Theme.package BGVWw9FYGj6+mY8nxScZgoKRC8SiV80mWJhHXfUZL3ASrwZSab5PdEwmyfwpJVUEWEMNST4HWayA1640d45c2eae16ecf48e883c75dd25f7
 ```
 
 
@@ -36,8 +36,9 @@ Example:
 
 ```
 <FileFolders>
-  <FileFolder webFolder="/Themes/TagNexLight" folderPath="D:\TAG\TAG.Theme.NeuroExchange\Root\Themes\TagNexLight"/>
-  <FileFolder webFolder="/Themes/TagNexDark" folderPath="D:\TAG\TAG.Theme.NeuroExchange\Root\Themes\TagNexDark"/>
+  <FileFolder webFolder="/Themes/TagNexBase" folderPath="C:\My Projects\TAG.NeuroExchange.Theme\Root\Themes\TagNexBase"/>
+  <FileFolder webFolder="/Themes/TagNexLight" folderPath="C:\My Projects\TAG.NeuroExchange.Theme\Root\Themes\TagNexLight"/>
+  <FileFolder webFolder="/Themes/TagNexDark" folderPath="C:\My Projects\TAG.NeuroExchange.Theme\Root\Themes\TagNexDark"/>
 </FileFolders>
 ```
 
