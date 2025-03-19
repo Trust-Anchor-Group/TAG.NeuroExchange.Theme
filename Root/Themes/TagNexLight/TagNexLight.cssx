@@ -14,7 +14,6 @@ section section
     margin: 1em 0 1em 0;
     background-color:rgba(0,0,0,0.05);
 }
-
 section[style]
 {
     -webkit-column-width: 15em;
@@ -35,7 +34,6 @@ figure figcaption
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     padding: 0.7em;
 }
-
 
 iframe
 {
@@ -205,4 +203,19 @@ mark
     font-family: ¤HeaderFont¤, ¤FontFamily¤;
     border-radius: 0.3em;
     padding: 0.1em 0.3em;
+}
+
+
+@media screen and (min-width: 901px) {
+    #native-header li > ul > li:hover > p,
+    #native-header li > ul > li:hover > a
+    {
+        background-color: ¤Blend(BackgroundColor, "black", 0.1)¤;
+    }
+
+    #native-header li > ul > li p,
+    #native-header li > ul > li a
+    {
+        border: 1px solid rgb(214 213 224);
+    }
 }

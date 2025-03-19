@@ -1,5 +1,14 @@
 ﻿¤PreprocessCssx(LoadResourceFile("/Themes/TagNexBase/TagNexBase.cssx"))¤
 
+/* #region Header*/
+
+#native-header
+{
+    background: ¤Blend(BackgroundColor, "black", 0.3)¤
+}
+
+/* #endregion Header*/
+
 body
 {
     background-color: rgb(24 25 26);
@@ -96,7 +105,6 @@ table caption
 {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
-
 tr:nth-child(odd)
 {
     background-color: rgba(0,0,0,0.02);
@@ -212,14 +220,15 @@ mark
 }
 
 @media screen and (min-width: 901px) {
-    #native-header li > ul > li
+    #native-header li > ul > li p,
+    #native-header li > ul > li a
     {
-        border-left: 1px solid rgba(255,255,255,0.7);
-        border-bottom: 1px solid rgba(255,255,255,0.7);
-        border-right: 1px solid rgba(255,255,255,0.7);
-        background-color: rgba(0,0,0,0.75);
-        white-space:nowrap;
-        transition: opacity 0.25s ease-out;
-        color:white;
+        border: 1px solid rgb(70 69 78);
+    }
+
+    #native-header li > ul > li:hover > p,
+    #native-header li > ul > li:hover > a
+    {
+        background-color: ¤Blend(BackgroundColor, "black", 0.2)¤;
     }
 }

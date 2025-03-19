@@ -12,7 +12,7 @@
 		<HeaderTextColor>#000000</HeaderTextColor>
 		<ButtonColor>#4D87C2</ButtonColor>
 		<ButtonTextColor>#FFFFFF</ButtonTextColor>
-		<MenuTextColor>#DFDFDF</MenuTextColor>
+		<MenuTextColor>#000000</MenuTextColor>
 		<InsertColor>#00A00040</InsertColor>
 		<DeleteColor>#A0000040</DeleteColor>
 		<LinkColorUnvisited>#3187B9</LinkColorUnvisited>

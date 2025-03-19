@@ -1,48 +1,8 @@
 ﻿¤PreprocessCssx(LoadResourceFile("/Themes/Base/Base.cssx"))¤
 
-/* #region Popup */
+/* #region Header */
 
-#native-popup-container
-{
-    border-radius:8px;
-}
-
-/* #endregion Popup */
-
-.menuItem {
-    box-shadow: none !important;
-    font-family: ¤HeaderFont¤, ¤FontFamily¤;
-    transition: background-color 100ms;
-}
-
-.menuItem:hover {
-    background-color: ¤ButtonSelectedColor¤;
-}
-
-nav {
-    padding-block: 0.5em;
-}
-
-body
-{
-    padding: 0;
-    margin: 0;
-    font-family: ¤Theme.FontFamily¤;
-    font-size: 100%;
-    background: url(¤Theme.GetBackgroundImage(1600,1600)¤);
-    background-color: rgb(235, 235, 235);
-    width:100%;
-    height:100%;
-    position:relative;
-    margin:0;
-    color:¤Theme.TextColor¤;
-}
-
-/* region Header */
-
-header
-{
-    box-sizing: border-box;
+#native-header {
     background-color: ¤BackgroundColor¤;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.151);
     max-width: 95%;
@@ -57,182 +17,44 @@ header
     z-index:3;
 }
 
-#toggle-nav {
-    display: none;
-}
+/* #endregion Header */
 
-#small-pagpage-name {
-    display: none;
-}
+/* #region Popup */
 
-#large-pagpage-name {
-    display: block;
-}
-
-nav > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav > div > #toggle-nav {
-    background-color: transparent;
-    height: 34px;
-    width: 34px;
-    padding: 0;
-    margin: 0;
-    color: inherit;
-}
-
-nav > div > #toggle-nav > svg {
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
-    color: inherit;
-}
-
-nav > div > p {
-    padding: 0;
-    margin: 0;
-    height: fit-content; 
-}
-
-nav > ul 
+#native-popup-container
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	display:flex;
+    border-radius:8px;
 }
 
-nav > ul > li
+/* #endregion Popup */
+
+/* #region admin */
+
+.menuItem {
+    box-shadow: none !important;
+    font-family: ¤HeaderFont¤, ¤FontFamily¤;
+    transition: background-color 100ms;
+}
+
+.menuItem:hover {
+    background-color: ¤ButtonSelectedColor¤;
+}
+
+/* #endregion admin */
+
+body
 {
-    float: left;
-    background-clip: content-box;
-	white-space:nowrap;
-	transition: opacity 0.25s ease-out;
-    font-weight: 600;
-	opacity:1;
-}
-
-
-header:hover > nav > ul > li
-{
-	opacity:1;
-    color: inherit;
-}
-
-nav > ul > li:first-child
-{
-    border-left: 0;
-}
-
-nav > ul > li a
-{
-    display: block;
-    text-align: center;
-    padding: 0.9em 1em;
-    text-decoration: none;
-    color: inherit;
-}
-
-nav > ul > li a:hover
-{ 
-    color: ¤ButtonColor¤;
-}
-
-nav > ul > li p
-{
-    padding: 0;
-    margin: 0;
-}
-
-nav > ul > li > ul
-{
-    display:none;
-}
-
-nav > ul > li > ul > li
-{
-    background-clip: content-box;
-	white-space:nowrap;
-	transition: opacity 0.25s ease-out;
-
-}
-
-nav > ul > li > ul > li p{
-    padding: 0.5em 1em;
-}
-
-nav > ul > li > ul > li > p
-{
-    padding: 0;
-    margin: 0;
+    background: url(¤Theme.GetBackgroundImage(1600,1600)¤);
+    background-color: BackgroundColor;
+    height:100%;
 }
 
 
 /* endregion Header */
 
-
-table 
-{
-    display: block;
-    overflow-x: auto;
-    max-width: 100%;
-    width: fit-content;
-    border-radius: 8px;
-}
-
-td
-{
-    min-width: 10rem;
-}
-
-
-a 
-{
-    color: ¤LinkColorUnvisited¤;
-}
-
-a:hover
-{
-    color: ¤LinkColorHot¤;
-}
-
-
-.active
-{
-    font-weight:600;
-    cursor: not-allowed;
-}
-
-footer
-{
-    color: ¤MenuTextColor¤;
-    padding:0.6em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align:center;
-    z-index:3;
-}
-
-footer > span
-{
-    background-color:rgba(0,0,0,0.5);
-    padding: 0.2em 2em 0.2em 2em;
-}
-
 footer a
 {
     color:#e0e0e0;
-}
-
-section
-{
-    border: 1px solid #B3B3B3;
-    border-radius: 8px;
-    background-color: #FFFFFF;
 }
 
 section section
@@ -240,7 +62,6 @@ section section
     padding: 1em 1em 1em 1em;
     border: 1px solid black;
     margin: 1em 0 1em 0;
-    background-color:rgba(0,0,0,0.05);
 }
 
 section[style]
@@ -258,261 +79,10 @@ section[style]
     text-justify: auto;
 }
 
-p
-{
-    font-size: 1em;
-    margin: 0.5em 0em 0.5em 0em;
-}
-
 h1,h2,h3,h4,h5,h6,h7,h8,h9
 {
-    color:¤HeaderTextColor¤;
-    margin-block: 1em 0.5em;
-    font-weight: 500;
     font-family: "Space Grotesk", ¤Theme.FontFamily¤;
 }
-
-h1
-{
-    font-size: 1.8em;
-    line-height: 1.25em;
-}
-
-section h1:first-child
-{
-    margin-top:0.75em;
-    -webkit-column-span: all;
-    column-span: all;
-}
-
-h1::before
-{
-    display: block; 
-    content: " ";
-    visibility: hidden;
-}
-
-h1:not(:first-child)::before
-{
-    margin-top: -4em;
-    height: 4em;
-}
-
-h2
-{
-    font-size: 1.5em;
-    line-height: 1.1em;
-}
-
-section h2:first-child
-{
-    margin-top:0.75em;
-}
-
-h2::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h3
-{
-    font-size: 1.4em;
-    line-height: 1em;
-}
-
-section h3:first-child
-{
-    margin-top:0.75em;
-}
-
-h3::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h4
-{
-    font-size: 1.3em;
-    line-height: 0.9em;
-}
-
-section h4:first-child
-{
-    margin-top:0.75em;
-}
-
-h4::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h5
-{
-    font-size: 1.2em;
-    line-height: 0.85em;
-}
-
-section h5:first-child
-{
-    margin-top:0.75em;
-}
-
-h5::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h6
-{
-    font-size: 1.1em;
-    line-height: 0.8em;
-}
-
-section h6:first-child
-{
-    margin-top:0.75em;
-}
-
-h6::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h7
-{
-    font-size: 1.5em;
-    line-height: 0.75em;
-}
-
-section h7:first-child
-{
-    margin-top:0.75em;
-}
-
-h7::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h8
-{
-    font-size: 1.4em;
-    line-height: 0.7em;
-}
-
-section h8:first-child
-{
-    margin-top:0.75em;
-}
-
-h8::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-h9
-{
-    font-size: 1.3em;
-    line-height: 0.65em;
-}
-
-section h9:first-child
-{
-    margin-top:0.75em;
-}
-
-h9::before
-{
-    display: block; 
-    content: " ";
-    margin-top: -4em;
-    height: 4em;
-    visibility: hidden;
-}
-
-section a:link
-{
-    color: ¤LinkColorUnvisited¤;
-}
-
-section a:visited
-{
-    color: ¤LinkColorVisited¤;
-}
-
-section a:hover
-{
-    color: ¤LinkColorHot¤;
-}
-
-section a:active
-{
-    color: ¤LinkColorHot¤;
-}
-
-em
-{
-}
-
-strong
-{
-}
-
-u
-{
-}
-
-ins
-{
-    background-color:¤InsertColor¤;
-}
-
-s
-{
-}
-
-del
-{
-    background-color:¤DeleteColor¤;
-}
-
-sup
-{
-}
-
-img
-{
-	max-width:100%;
-}
-
 
 img.aloneUnsized
 {
@@ -538,20 +108,9 @@ figure figcaption
     padding: 0.7em;
 }
 
-video
-{
-	max-width:100%;
-}
-
 iframe
 {
-    max-width: 100%;
     box-shadow: 0.3em 0.3em 0.3em rgba(0,0,0,0.1);
-}
-
-code
-{
-    word-break: break-word;
 }
 
 pre
@@ -570,12 +129,19 @@ pre
     white-space: pre-wrap;
 }
 
-br
+mark
 {
+    font-family: ¤HeaderFont¤, ¤FontFamily¤;
 }
 
-hr
+input[type=button], input[type=submit], input[type=reset], button
 {
+    font-family: ¤HeaderFont¤, ¤FontFamily¤;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover
+{
+    background-color: ¤ButtonSelectedColor¤;
 }
 
 blockquote
@@ -602,18 +168,6 @@ blockquote.deleted
     border-color:¤DeleteColor¤ !important;
     background-color: ¤DeleteColor¤ !important;
     text-decoration: line-through;
-}
-
-ul
-{
-}
-
-ol
-{
-}
-
-li
-{
 }
 
 ul.taskList
@@ -643,28 +197,15 @@ input[type='checkbox']:checked ~ label.taskListItemLabel
     text-decoration:line-through;
 }
 
-dl
-{
-}
-
 dt
 {
     font-weight: bold;
     color:¤ButtonColor¤;
 }
 
-dd
-{
-}
-
 table
 {
-    margin-bottom: 1.5em;
-    border-collapse: collapse;
     box-shadow: 0.3em 0.3em 0.3em rgba(0,0,0,0.1);
-    border-collapse: separate;
-    border-width: 0;
-    border-spacing:0;
 }
 
 table caption
@@ -680,11 +221,6 @@ tr:nth-child(odd)
 tr:nth-child(even)
 {
     background-color: rgba(0,0,0,0.07);
-}
-
-table, th, td
-{
-    border: 0;
 }
 
 th
@@ -797,293 +333,6 @@ div.footnotes + p
     display:none;
 }
 
-input
-{
-	width: 100%;
-    padding: 6px 10px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    border: 2px solid ¤ButtonColor¤;
-    border-radius: 4px;
-    background-color: ¤GraphBgColor¤;
-    color:¤Theme.TextColor¤;
-}
-
-input:focus
-{
-    border: 3px solid ¤ButtonColor¤;
-}
-
-select
-{
-	width: 100%;
-    padding: 6px 10px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    border: 2px solid ¤ButtonColor¤;
-    border-radius: 4px;
-    background-color: ¤GraphBgColor¤;
-    color:¤Theme.TextColor¤;
-}
-
-select:focus
-{
-    border: 3px solid ¤ButtonColor¤;
-}
-
-option
-{
-    color:¤Theme.TextColor¤;
-    background-color:¤BackgroundColor¤;
-}
-
-option[selected]
-{
-    color:¤HeaderTextColor¤ !important;
-    background-color:¤HeaderColor¤ !important;
-}
-
-textarea 
-{
-	width: 100%;
-	height:6em;
-	overflow:auto;
-    padding: 6px 10px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    border: 2px solid ¤ButtonColor¤;
-    border-radius: 4px;
-	resize:none;
-	-moz-tab-size : 3;
-	-o-tab-size : 3;
-	tab-size : 3;
-    background-color: ¤GraphBgColor¤;
-    color:¤Theme.TextColor¤;
-}
-
-textarea:focus
-{
-    border: 3px solid ¤ButtonColor¤;
-}
-
-input[type=button], input[type=submit], input[type=reset], button
-{
-    font-family: ¤HeaderFont¤, ¤FontFamily¤;
-    transition: color 100ms, background-color 100ms;
-    background-color: ¤ButtonColor¤;
-    font-weight: bold;
-    border: none;
-    color: ¤ButtonTextColor¤;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    border-radius: 4px;
-}
-
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover
-{
-    background-color: ¤ButtonSelectedColor¤;
-}
-
-input[type="checkbox"]
-{
-	display:none;
-}
-
-input[type="checkbox"] + label
-{
-	display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 2.5em;
-	padding-bottom:0.3em;
-    margin-right: 1em;
-}
-
-input[type="checkbox"] + label:before
-{
-	content: "";
-    display: inline-block;
- 
-    width: 1em;
-    height: 1em;
- 
-    margin-right: 1em;
-    position: absolute;
-    left: 0;
-    vertical-align:center;
-    top: 1px;
-    bottom: 1px;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    border-radius: 0.15em;
-    font-size: 1.75em;
-    box-sizing: border-box;
-    border: 2px solid ¤ButtonColor¤;
-    background-color: ¤GraphBgColor¤;
-    color:¤Theme.TextColor¤;
-}
-
-input[type="checkbox"] + label:before:focus
-{
-    border: 3px solid ¤ButtonColor¤;
-}
-
-input[type="checkbox"]:checked + label:before
-{
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    color: ¤Theme.TextColor¤;
-    text-align: center;
-    line-height: 0.75em;
-}
-
-input[type="radio"]
-{
-	display:none;
-}
-
-input[type="radio"] + label
-{
-	display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 2.5em;
-	padding-bottom:0.3em;
-    margin-right: 1em;
-}
-
-input[type="radio"] + label:before
-{
-	content: "";
-    display: inline-block;
- 
-    width: 1em;
-    height: 1em;
- 
-    margin-right: 1em;
-    position: absolute;
-    left: 0;
-    vertical-align:center;
-    top: 1px;
-    bottom: 1px;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    border-radius: 1em;
-    font-size: 1.75em;
-    box-sizing: border-box;
-    border: 2px solid ¤ButtonColor¤;
-}
-
-input[type="radio"] + label:before:focus
-{
-    border: 3px solid ¤ButtonColor¤;
-}
-
-input[type="radio"]:checked + label:before
-{
-    content: "\2022";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    color: ¤ButtonColor¤;
-    text-align: center;
-    line-height: 0.75em;
-}
-
-.clickable 
-{
-	cursor:pointer;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-
-.clickable:hover
-{
-	cursor:pointer;
-    background-color: rgba(0,0,0,0.1);
-}
-
-fieldset
-{
-    border:0.1em solid ¤HeaderColor¤;
-    background-color: ¤Alpha(HeaderColor,6)¤;
-    border-radius: 8px;
-}
-
-fieldset > legend
-{
-    color:¤HeaderTextColor¤;
-    font-size: 1.25em;
-	padding: 0.25em 1em 0.25em 1em;
-	border-radius: 8px;
-	background-color:¤HeaderColor¤;
-}
-
-.posButton 
-{
-	background-color: ¤PosColor¤;
-    font-family: ¤HeaderFont¤, ¤FontFamily¤;
-}
-
-.posButton:hover, .posButtonPressed
-{
-	background-color:¤PosSelectedColor¤;
-}
-
-.negButton 
-{
-	background-color:¤NegColor¤;
-}
-
-.negButton:hover, .negButtonPressed
-{
-	background-color:¤NegSelectedColor¤;
-}
-
-.posButtonSm
-{
-	padding:0.75em 0.25em 0.75em 0.25em;
-	line-height:0.2em;
-	background-color:¤PosColor¤;
-	width:7em;
-}
-
-.posButtonSmPressed
-{
-	padding:0.75em 0.25em 0.75em 0.25em;
-	line-height:0.2em;
-	width:7em;
-	background-color:¤PosSelectedColor¤;
-}
-
-.negButtonSm
-{
-	padding:0.75em 0.25em 0.75em 0.25em;
-	line-height:0.2em;
-	background-color:¤NegColor¤;
-	width:7em;
-}
-
-.negButtonSmPressed
-{
-	padding:0.75em 0.25em 0.75em 0.25em;
-	line-height:0.2em;
-	width:7em;
-	background-color:¤NegSelectedColor¤;
-}
-
-.disabledButton
-{
-	background-color:¤Blend(Theme.TextColor,BackgroundColor,0.75)¤;
-}
-
 .error 
 {
 	color:¤Theme.PosColor¤;
@@ -1101,60 +350,6 @@ fieldset > legend
     display: inline;
 }
 
-mark
-{
-    background-color:¤TagColor¤;
-    color: #FFF;
-    font-family: ¤HeaderFont¤, ¤FontFamily¤;
-    border-radius: 0.3em;
-    padding: 0.1em 0.3em;
-}
-
-abbr
-{
-    cursor: help;
-    position: relative;
-    text-decoration-color: ¤TagColor¤;
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 2px;
-}
-
-abbr:hover::after 
-{
-    position: absolute;
-    top: 125%;
-    left: 25%;
-    display: block;
-    padding: 0.25em 0.5em;
-    background: ¤Blend(ButtonColor,BackgroundColor,0.75)¤;
-    border: 1px solid ¤ButtonColor¤;
-    color:¤Theme.TextColor¤;
-    content: attr(data-title);
-}
-
-.horizontalAlignLeft
-{
-    text-align:start;
-}
-
-.horizontalAlignRight
-{
-    text-align:end;
-}
-
-.horizontalAlignCenter
-{
-    text-align:center;
-}
-
-.horizontalAlignMargins
-{
-    text-align:justify;
-}
-
-
-
 
 
 @media screen and (min-width: 901px) {
@@ -1162,7 +357,6 @@ abbr:hover::after
     {
         align-items: center;
     }
-
 
     #native-header nav > ul > li:hover > ul 
     {
@@ -1172,19 +366,45 @@ abbr:hover::after
         padding: 0;
     }
 
+    #native-header li > ul > li > p,
     #native-header li > ul > li > a
     {
         background-color: ¤BackgroundColor¤;
     }
-    #native-header li > ul > li:hover > a
+
+
+
+    #native-header li > ul > li:first-of-type > p,
+    #native-header li > ul > li:first-of-type > a
     {
-        background-color: ¤Blend(BackgroundColor, "black", 0.1)¤;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    #native-header nav > ul > li > ul > li:first-of-type:hover > p,
+    #native-header nav > ul > li > ul > li:first-of-type:hover > a
+    {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+    
+    #native-header li > ul > li > ul > li:first-of-type > p,
+    #native-header li > ul > li > ul > li:first-of-type > a
+    {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+    
+    #native-header li > ul > li:last-of-type > p,
+    #native-header li > ul > li:last-of-type > a
+    {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 }
 
 
 @media screen and (max-width: 900px) {
-
     main > section
     {
         border: 0;
@@ -1201,10 +421,6 @@ abbr:hover::after
 
     #toggle-nav {
         display: inline-block;
-    }
-
-    nav {
-        padding: 0;
     }
 
     nav > ul {

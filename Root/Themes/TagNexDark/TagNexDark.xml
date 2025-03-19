@@ -10,9 +10,9 @@
 		<BackgroundColor>#18191A</BackgroundColor>
 		<HeaderColor>#4D87C2</HeaderColor>
 		<HeaderTextColor>#FFFFFF</HeaderTextColor>
-		<ButtonColor>#4D87C2</ButtonColor>
+		<ButtonColor>#34ae83</ButtonColor>
 		<ButtonTextColor>#FFFFFF</ButtonTextColor>
-		<MenuTextColor>#202020</MenuTextColor>
+		<MenuTextColor>#FFFFFF</MenuTextColor>
 		<InsertColor>#ff5fff40</InsertColor>
 		<DeleteColor>#5fffff40</DeleteColor>
 		<LinkColorUnvisited>#3187B9</LinkColorUnvisited>
@@ -23,18 +23,11 @@
 		<GraphFgColor>#FFFFFF</GraphFgColor>
 	</BasicProperties>
 	<CustomProperties>
-		<Property name="FooterBackground" value='black' />
-
-		<Property name="SunB" value='rgb(18 161 119)' />
-
-
 		<Property name="HeaderFont" value='"Space Grotesk"' />
 		<Property name="SecondaryButtonColor" value='#000000' />
 		<Property name="SecondaryTextColor" value='#FFFFFF' />
-		<Property name="TertiaryButtonColor" value='#FFFFFF' />
-		<Property name="TertiaryTextColor" value='#000000' />
 		<Property name="PosColor" value="#33c592" />
-		<Property name="PosSelectedColor" value="#3E776D" />
+		<Property name="PosSelectedColor" value="#328c6c" />
 		<Property name="ButtonSelectedColor" value="#2d557f"/>
 		<Property name="NegColor" value="#d5474a" />
 		<Property name="NegSelectedColor" value="#8f2c2e" />
