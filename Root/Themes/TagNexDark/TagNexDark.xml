@@ -10,14 +10,14 @@
 		<BackgroundColor>#18191A</BackgroundColor>
 		<HeaderColor>#4D87C2</HeaderColor>
 		<HeaderTextColor>#FFFFFF</HeaderTextColor>
-		<ButtonColor>#34ae83</ButtonColor>
+		<ButtonColor>#4D87C2</ButtonColor>
 		<ButtonTextColor>#FFFFFF</ButtonTextColor>
 		<MenuTextColor>#FFFFFF</MenuTextColor>
 		<InsertColor>#ff5fff40</InsertColor>
 		<DeleteColor>#5fffff40</DeleteColor>
-		<LinkColorUnvisited>#3187B9</LinkColorUnvisited>
-		<LinkColorVisited>#25658B</LinkColorVisited>
-		<LinkColorHot>#4CAF50</LinkColorHot>
+		<LinkColorUnvisited>#56b5ec</LinkColorUnvisited>
+		<LinkColorVisited>#3187B9</LinkColorVisited>
+		<LinkColorHot>#a7cff9</LinkColorHot>
 		<FontFamily>"Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif</FontFamily>
 		<GraphBgColor>#000000</GraphBgColor>
 		<GraphFgColor>#FFFFFF</GraphFgColor>
