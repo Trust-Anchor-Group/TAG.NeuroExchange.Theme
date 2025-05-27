@@ -216,7 +216,7 @@ mark
     #native-header li > ul > li p,
     #native-header li > ul > li a
     {
-        border: 1px solid rgb(214 213 224);
+        border: 1px solid rgb(178 177 186);
     }
 
     #native-header nav > ul > li:hover:has(ul) > p,
